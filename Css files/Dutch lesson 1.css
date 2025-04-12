@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #34495e;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;  /* Increased font size for better visibility */
+}
+
+/* Navigation Styling */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center; /* Center align the nav items */
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Image Styling - Centered and Responsive */
+.lesson-image {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 20px auto;  /* Center the image */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.lesson-image:hover {
+    transform: scale(1.1);  /* Smooth scale effect on hover */
+}
+
+/* Lesson Section Styling */
+.lesson-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-section h1, .lesson-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.lesson-section h1 {
+    font-size: 2rem;  /* Larger font size for main section titles */
+}
+
+.lesson-section h2 {
+    font-size: 1.5rem;  /* Slightly smaller for subtitles */
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lesson-image {
+        max-width: 100%;  /* Make image fill container on mobile */
+        width: 80%;  /* Image width reduced for better mobile fit */
+    }
+
+    .lesson-section h1 {
+        font-size: 1.8rem;  /* Adjust heading size for smaller screens */
+    }
+
+    .lesson-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        text-align: center; /* Ensure navigation is centered on smaller screens */
+    }
+
+    .nav-links li {
+        margin: 0 10px;  /* Adjust margins for smaller screens */
+    }
+}
