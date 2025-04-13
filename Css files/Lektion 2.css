@@ -71,7 +71,7 @@ header {
 
 /* Lesson Image */
 .lesson-image {
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     display: block;
     margin: 1rem auto;
