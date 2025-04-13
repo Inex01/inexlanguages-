@@ -1,32 +1,38 @@
-/* General Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
+/* === General Reset and Body === */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-/* Header Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f6f9;
+    color: #2c3e50;
+    min-height: 100vh;
+}
+
+/* === Header === */
 header {
     background-color: #34495e;
-    padding: 1rem 0;
+    width: 100%;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
 header .logo h1 {
     color: white;
-    margin: 0;
-    font-size: 2rem;  /* Increased font size for better visibility */
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
-/* Navigation Styling */
+/* === Navigation === */
 .nav-links {
     list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    text-align: center; /* Center align the nav items */
+    margin-top: 10px;
 }
 
 .nav-links li {
@@ -37,93 +43,118 @@ header .logo h1 {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    color: #1abc9c;
 }
 
-/* Image Styling - Centered and Responsive */
-.lesson-image {
+/* === Main Content === */
+main {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 200px;
-    display: block;
-    margin: 20px auto;  /* Center the image */
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, width 0.3s ease;
+    padding: 2rem 1rem;
+}
+
+.center-content {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* === Lesson Image === */
+.lesson-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .lesson-image:hover {
-    transform: scale(1.1);  /* Smooth scale effect on hover */
+    transform: scale(1.05);
 }
 
-/* Lesson Section Styling */
+/* === Section Styling === */
 .lesson-section {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2rem;
-    margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
 }
 
 .lesson-section h1, .lesson-section h2 {
-    color: #2c3e50;
     margin-bottom: 1rem;
+    color: #2c3e50;
 }
 
 .lesson-section h1 {
-    font-size: 2rem;  /* Larger font size for main section titles */
+    font-size: 2rem;
 }
 
 .lesson-section h2 {
-    font-size: 1.5rem;  /* Slightly smaller for subtitles */
+    font-size: 1.5rem;
 }
 
-/* Footer Section */
+.lesson-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lesson-section li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+audio {
+    display: block;
+    margin: 0.5rem 0 1.2rem;
+}
+
+/* === Footer === */
 footer {
     background-color: #34495e;
     color: white;
-    padding: 1.5rem 0;
     text-align: center;
-}
-
-footer p {
-    font-size: 1rem;
+    padding: 2rem 0;
+    width: 100%;
 }
 
 footer a {
     color: #ff6347;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 footer a:hover {
     color: #f39c12;
 }
 
-/* Responsive Design */
+/* === Responsive === */
 @media (max-width: 768px) {
-    .lesson-image {
-        max-width: 100%;  /* Make image fill container on mobile */
-        width: 80%;  /* Image width reduced for better mobile fit */
+    .lesson-section {
+        padding: 1.5rem;
     }
 
     .lesson-section h1 {
-        font-size: 1.8rem;  /* Adjust heading size for smaller screens */
+        font-size: 1.6rem;
     }
 
     .lesson-section h2 {
         font-size: 1.3rem;
     }
 
-    .nav-links {
-        text-align: center; /* Ensure navigation is centered on smaller screens */
+    .lesson-image {
+        width: 90px;
+        height: 90px;
     }
 
     .nav-links li {
-        margin: 0 10px;  /* Adjust margins for smaller screens */
+        margin: 0 10px;
     }
-}
